@@ -2,14 +2,16 @@ const professionals = [
   {name:'Karina Lujan Burgos',initials:'KB',category:'Psicopedagogía',role:'Psicopedagoga',phone:'2215485965',display:'221 548-5965',email:'lic.karinaburgos@gmail.com'},
   {name:'Camila Lamiño',initials:'CL',category:'Psicopedagogía',role:'Psicopedagoga',phone:'2214955975',display:'221 495-5975',email:'Camilalaminio.psp@gmail.com'},
   {name:'Claudia Catalina Repetto',initials:'CR',category:'Fonoaudiología',role:'Fonoaudióloga',specialty:'Lenguaje, alteraciones respiratorias y deglución atípica.',phone:'2214281418',display:'221 428-1418',email:'catalinarepetto25@gmail.com'},
-  {name:'Daiana Ferrero',initials:'DF',category:'Psicopedagogía',role:'Lic. en Psicopedagogía',phone:'2392554546',display:'2392 55-4546',email:'daianaferrero@hotmail.com'}
+  {name:'Daiana Ferrero',initials:'DF',category:'Psicopedagogía',role:'Lic. en Psicopedagogía',phone:'2392554546',display:'2392 55-4546',email:'daianaferrero@hotmail.com'},
+  {name:'Anahí Gomez',initials:'AG',category:'Fonoaudiología',role:'Fonoaudióloga',phone:'2223431172',display:'2223 43-1172',email:'anahigom95@gmail.com'},
+  {name:'Mariana Bonfigli',initials:'MB',category:'Psicología',role:'Psicología clínica',specialty:'Atención a adultos, adolescentes y niños.',phone:'2215437390',display:'221 543-7390',email:'marianabonfigli@gmail.com'}
 ];
 function renderProfessional(p) {
   const message = encodeURIComponent(`Hola ${p.name}, te contacto desde la página de EPSI. Quisiera hacer una consulta.`);
   return `<article class="card"><div class="person"><span class="avatar" aria-hidden="true">${p.initials}</span><div><h3>${p.name}</h3><p class="role">${p.role}</p></div></div>${p.specialty ? `<p class="specialty">${p.specialty}</p>` : ''}<div class="actions"><a class="contact whatsapp" href="https://wa.me/549${p.phone}?text=${message}" target="_blank" rel="noopener noreferrer" aria-label="Contactar a ${p.name} por WhatsApp (abre en otra pestaña)"><svg aria-hidden="true"><use href="#wa"/></svg>WhatsApp</a><a class="contact email" href="mailto:${p.email}" aria-label="Enviar un correo a ${p.name}"><svg aria-hidden="true"><use href="#mail"/></svg>Mail</a></div><div class="details"><div class="detail-row"><a href="tel:+549${p.phone}" aria-label="Llamar a ${p.name}">Cel. ${p.display}</a><button class="copy" type="button" data-copy="${p.phone}" aria-label="Copiar teléfono de ${p.name}">Copiar</button></div><div class="detail-row"><a href="mailto:${p.email}">${p.email}</a><button class="copy" type="button" data-copy="${p.email}" aria-label="Copiar correo de ${p.name}">Copiar</button></div></div></article>`;
 }
 
-const categories = ['Psicopedagogía', 'Fonoaudiología'];
+const categories = ['Psicopedagogía', 'Fonoaudiología', 'Psicología'];
 document.getElementById('team').innerHTML = categories.map((category, index) => {
   const cards = professionals.filter(p => p.category === category).map(renderProfessional).join('');
   return `<details class="professional-group specialty" name="specialties"><summary class="specialty-toggle"><span><span class="specialty-name">${category}</span><span class="specialty-hint">Ver profesionales</span></span><svg class="specialty-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary><div class="category-cards">${cards}</div></details>`;
@@ -53,4 +55,5 @@ if (window.matchMedia('(hover: hover) and (pointer: fine) and (prefers-reduced-m
     });
   });
 }
+
 
