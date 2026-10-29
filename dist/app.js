@@ -10,7 +10,7 @@ const professionals = [
   {name:'M. Juliana Brandi',initials:'JB',category:'Psicopedagogía',role:'Psicopedagoga',phone:'2215587073',display:'221 558-7073',email:'mjbrandi74@hotmail.com'},
   {name:'Pilar Payer',initials:'PP',category:'Musicoterapia',role:'Musicoterapeuta',phone:'2215701831',display:'221 570-1831',email:'lic.pilarpayer@gmail.com'},
   {name:'Agustina Vericat',initials:'AV',photo:'profesionales/agustina-vericat.jpg',category:'Neurodesarrollo',role:'Dra. en Neurodesarrollo',phone:'2215234150',display:'221 523-4150',email:'agustinavericat@gmail.com'},
-  {name:'Sandra Marder',initials:'SM',photo:'profesionales/sandra-marder.png',category:'Psicología',role:'Dra. en Psicología'}
+  {name:'Sandra Marder',initials:'SM',photo:'profesionales/sandra-marder.png',category:'Psicología',role:'Dra. en Psicología',specialty:'Neuropsicología. Aprendizaje y desarrollo en niños y adolescentes',phone:'1166447155',display:'11 6644-7155',email:'sandramarder@gmail.com'}
 ];
 function renderProfessional(p) {
   const message = encodeURIComponent(`Hola ${p.name}, te contacto desde la página de EPSI. Quisiera hacer una consulta.`);
