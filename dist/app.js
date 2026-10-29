@@ -6,7 +6,7 @@ const professionals = [
   {name:'Daiana Ferrero',initials:'DF',category:'Psicopedagogía',role:'Lic. en Psicopedagogía',phone:'2392554546',display:'2392 55-4546',email:'daianaferrero@hotmail.com'},
   {name:'Anahí Gomez',initials:'AG',photo:'profesionales/anahi-gomez.jpg',category:'Fonoaudiología',role:'Fonoaudióloga',phone:'2223431172',display:'2223 43-1172',email:'anahigom95@gmail.com'},
   {name:'Mariana Bonfigli',initials:'MB',category:'Psicología',role:'Psicología clínica',specialty:'Atención a adultos, adolescentes y niños.',phone:'2215437390',display:'221 543-7390',email:'marianabonfigli@gmail.com'},
-  {name:'Claudia Peralta',initials:'CP',category:'Psicopedagogía',role:'Lic. en Psicopedagogía',phone:'2215467348',display:'221 546-7348',email:'clau.peralta@hotmail.com'},
+  {name:'Claudia Peralta',initials:'CP',photo:'profesionales/claudia-peralta.jpg',category:'Psicopedagogía',role:'Lic. en Psicopedagogía',phone:'2215467348',display:'221 546-7348',email:'clau.peralta@hotmail.com'},
   {name:'Cecilia Collazo',initials:'CC',photo:'profesionales/cecilia-collazo.png',category:'Psicología',role:'Especialista en Psicología Clínica',phone:'2215471873',display:'221 547-1873',email:'psic_collazo@hotmail.com'},
   {name:'M. Juliana Brandi',initials:'JB',photo:'profesionales/juliana-brandi.jpg',category:'Psicopedagogía',role:'Psicopedagoga',phone:'2215587073',display:'221 558-7073',email:'mjbrandi74@hotmail.com'},
   {name:'Pilar Payer',initials:'PP',photo:'profesionales/pilar-payer.png',category:'Musicoterapia',role:'Musicoterapeuta',phone:'2215701831',display:'221 570-1831',email:'lic.pilarpayer@gmail.com'},

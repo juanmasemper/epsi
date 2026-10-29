@@ -18,3 +18,5 @@ html{min-height:100%;background:var(--bg)}body{min-height:100vh;min-height:100sv
 .avatar-photo img[src='profesionales/anahi-gomez.jpg']{object-position:50% 30%;transform:scale(1.5);transform-origin:50% 50%}
 
 .avatar-photo img[src='profesionales/sofia.jpg']{object-position:50% 60%}
+
+.avatar-photo img[src='profesionales/claudia-peralta.jpg']{object-position:50% 30%;transform:scale(2.2);transform-origin:64% 50%}
