@@ -1,18 +1,27 @@
 const professionals = [
   {name:'Karina Luján Burgos',initials:'KB',category:'Psicopedagogía',role:'Lic. en Psicopedagogía',specialty:'Maestranda en Neuropsicología Infantojuvenil',phone:'2215485965',display:'221 548-5965',email:'lic.karinaburgos@gmail.com'},
   {name:'Camila Lamiño',initials:'CL',category:'Psicopedagogía',role:'Psicopedagoga',phone:'2214955975',display:'221 495-5975',email:'Camilalaminio.psp@gmail.com'},
-  {name:'Claudia Catalina Repetto',initials:'CR',category:'Fonoaudiología',role:'Fonoaudióloga',specialty:'Lenguaje, alteraciones respiratorias y deglución atípica.',phone:'2214281418',display:'221 428-1418',email:'catalinarepetto25@gmail.com'},
+  {name:'Claudia Catalina Repetto',initials:'CR',photo:'profesionales/claudia-repetto.jpg',category:'Fonoaudiología',role:'Fonoaudióloga',specialty:'Lenguaje, alteraciones respiratorias y deglución atípica.',phone:'2214281418',display:'221 428-1418',email:'catalinarepetto25@gmail.com'},
   {name:'Daiana Ferrero',initials:'DF',category:'Psicopedagogía',role:'Lic. en Psicopedagogía',phone:'2392554546',display:'2392 55-4546',email:'daianaferrero@hotmail.com'},
   {name:'Anahí Gomez',initials:'AG',category:'Fonoaudiología',role:'Fonoaudióloga',phone:'2223431172',display:'2223 43-1172',email:'anahigom95@gmail.com'},
   {name:'Mariana Bonfigli',initials:'MB',category:'Psicología',role:'Psicología clínica',specialty:'Atención a adultos, adolescentes y niños.',phone:'2215437390',display:'221 543-7390',email:'marianabonfigli@gmail.com'},
   {name:'Claudia Peralta',initials:'CP',category:'Psicopedagogía',role:'Lic. en Psicopedagogía',phone:'2215467348',display:'221 546-7348',email:'clau.peralta@hotmail.com'},
   {name:'Cecilia Collazo',initials:'CC',category:'Psicología',role:'Especialista en Psicología Clínica',phone:'2215471873',display:'221 547-1873',email:'psic_collazo@hotmail.com'},
   {name:'M. Juliana Brandi',initials:'JB',category:'Psicopedagogía',role:'Psicopedagoga',phone:'2215587073',display:'221 558-7073',email:'mjbrandi74@hotmail.com'},
-  {name:'Pilar Payer',initials:'PP',category:'Musicoterapia',role:'Musicoterapeuta',phone:'2215701831',display:'221 570-1831',email:'lic.pilarpayer@gmail.com'}
+  {name:'Pilar Payer',initials:'PP',category:'Musicoterapia',role:'Musicoterapeuta',phone:'2215701831',display:'221 570-1831',email:'lic.pilarpayer@gmail.com'},
+  {name:'Agustina Vericat',initials:'AV',photo:'profesionales/agustina-vericat.jpg',category:'Neurodesarrollo',role:'Dra. en Neurodesarrollo',phone:'2215234150',display:'221 523-4150',email:'agustinavericat@gmail.com'},
+  {name:'Sandra Marder',initials:'SM',photo:'profesionales/sandra-marder.png',category:'Psicología',role:'Dra. en Psicología'}
 ];
 function renderProfessional(p) {
   const message = encodeURIComponent(`Hola ${p.name}, te contacto desde la página de EPSI. Quisiera hacer una consulta.`);
-  return `<article class="card"><div class="person"><span class="avatar" aria-hidden="true">${p.initials}</span><div><h3>${p.name}</h3><p class="role">${p.role}</p></div></div>${p.specialty ? `<p class="specialty">${p.specialty}</p>` : ''}<div class="actions"><a class="contact whatsapp" href="https://wa.me/549${p.phone}?text=${message}" target="_blank" rel="noopener noreferrer" aria-label="Contactar a ${p.name} por WhatsApp (abre en otra pestaña)"><svg aria-hidden="true"><use href="#wa"/></svg>WhatsApp</a><a class="contact email" href="mailto:${p.email}" aria-label="Enviar un correo a ${p.name}"><svg aria-hidden="true"><use href="#mail"/></svg>Mail</a></div><div class="details"><div class="detail-row"><a href="tel:+549${p.phone}" aria-label="Llamar a ${p.name}">Cel. ${p.display}</a><button class="copy" type="button" data-copy="${p.phone}" aria-label="Copiar teléfono de ${p.name}">Copiar</button></div><div class="detail-row"><a href="mailto:${p.email}">${p.email}</a><button class="copy" type="button" data-copy="${p.email}" aria-label="Copiar correo de ${p.name}">Copiar</button></div></div></article>`;
+  const avatar = p.photo
+    ? `<span class="avatar avatar-photo"><img src="${p.photo}" alt="${p.name}" width="56" height="56" loading="lazy" decoding="async"></span>`
+    : `<span class="avatar" aria-hidden="true">${p.initials}</span>`;
+  const whatsapp = p.phone ? `<a class="contact whatsapp" href="https://wa.me/549${p.phone}?text=${message}" target="_blank" rel="noopener noreferrer" aria-label="Contactar a ${p.name} por WhatsApp (abre en otra pestaña)"><svg aria-hidden="true"><use href="#wa"/></svg>WhatsApp</a>` : '';
+  const mail = p.email ? `<a class="contact email" href="mailto:${p.email}" aria-label="Enviar un correo a ${p.name}"><svg aria-hidden="true"><use href="#mail"/></svg>Mail</a>` : '';
+  const phoneDetail = p.phone ? `<div class="detail-row"><a href="tel:+549${p.phone}" aria-label="Llamar a ${p.name}">Cel. ${p.display}</a><button class="copy" type="button" data-copy="${p.phone}" aria-label="Copiar teléfono de ${p.name}">Copiar</button></div>` : '';
+  const mailDetail = p.email ? `<div class="detail-row"><a href="mailto:${p.email}">${p.email}</a><button class="copy" type="button" data-copy="${p.email}" aria-label="Copiar correo de ${p.name}">Copiar</button></div>` : '';
+  return `<article class="card"><div class="person">${avatar}<div><h3>${p.name}</h3><p class="role">${p.role}</p></div></div>${p.specialty ? `<p class="specialty">${p.specialty}</p>` : ''}${whatsapp || mail ? `<div class="actions">${whatsapp}${mail}</div><div class="details">${phoneDetail}${mailDetail}</div>` : ''}</article>`;
 }
 
 const categories = ['Psicopedagogía', 'Fonoaudiología', 'Psicología', 'Neurodesarrollo', 'Musicoterapia'];
@@ -60,5 +69,4 @@ if (window.matchMedia('(hover: hover) and (pointer: fine) and (prefers-reduced-m
     });
   });
 }
-
 
