@@ -1,22 +1,22 @@
 const professionals = [
-  {name:'Sofía Mauro',initials:'SM',photo:'profesionales/sofia.jpg',category:'Psicopedagogía',role:'Lic. en Psicopedagogía',phone:'3775444982',display:'3775 44-4982',email:'sofiamauro18@gmail.com'},
-  {name:'Karina Luján Burgos',initials:'KB',photo:'profesionales/karina-lujan-burgos.jpg',category:'Psicopedagogía',role:'Lic. en Psicopedagogía',specialty:'Maestranda en Neuropsicología Infantojuvenil',phone:'2215485965',display:'221 548-5965',email:'lic.karinaburgos@gmail.com'},
+  {name:'Sofía Mauro',initials:'SM',photo:'profesionales/optimized/sofia.jpg',category:'Psicopedagogía',role:'Lic. en Psicopedagogía',phone:'3775444982',display:'3775 44-4982',email:'sofiamauro18@gmail.com'},
+  {name:'Karina Luján Burgos',initials:'KB',photo:'profesionales/optimized/karina-lujan-burgos.jpg',category:'Psicopedagogía',role:'Lic. en Psicopedagogía',specialty:'Maestranda en Neuropsicología Infantojuvenil',phone:'2215485965',display:'221 548-5965',email:'lic.karinaburgos@gmail.com'},
   {name:'Camila Lamiño',initials:'CL',category:'Psicopedagogía',role:'Psicopedagoga',phone:'2214955975',display:'221 495-5975',email:'Camilalaminio.psp@gmail.com'},
-  {name:'Claudia Catalina Repetto',initials:'CR',photo:'profesionales/claudia-repetto.jpg',category:'Fonoaudiología',role:'Fonoaudióloga',specialty:'Lenguaje, alteraciones respiratorias y deglución atípica.',phone:'2214281418',display:'221 428-1418',email:'catalinarepetto25@gmail.com'},
+  {name:'Claudia Catalina Repetto',initials:'CR',photo:'profesionales/optimized/claudia-repetto.jpg',category:'Fonoaudiología',role:'Fonoaudióloga',specialty:'Lenguaje, alteraciones respiratorias y deglución atípica.',phone:'2214281418',display:'221 428-1418',email:'catalinarepetto25@gmail.com'},
   {name:'Daiana Ferrero',initials:'DF',category:'Psicopedagogía',role:'Lic. en Psicopedagogía',phone:'2392554546',display:'2392 55-4546',email:'daianaferrero@hotmail.com'},
-  {name:'Anahí Gomez',initials:'AG',photo:'profesionales/anahi-gomez.jpg',category:'Fonoaudiología',role:'Fonoaudióloga',phone:'2223431172',display:'2223 43-1172',email:'anahigom95@gmail.com'},
-  {name:'Mariana Bonfigli',initials:'MB',photo:'profesionales/mariana-bonfigli.jpg',category:'Psicología',role:'Psicología clínica',specialty:'Atención a adultos, adolescentes y niños.',phone:'2215437390',display:'221 543-7390',email:'marianabonfigli@gmail.com'},
-  {name:'Claudia Peralta',initials:'CP',photo:'profesionales/claudia-peralta.jpg',category:'Psicopedagogía',role:'Lic. en Psicopedagogía',phone:'2215467348',display:'221 546-7348',email:'clau.peralta@hotmail.com'},
-  {name:'Cecilia Collazo',initials:'CC',photo:'profesionales/cecilia-collazo.png',category:'Psicología',role:'Especialista en Psicología Clínica',phone:'2215471873',display:'221 547-1873',email:'psic_collazo@hotmail.com'},
-  {name:'M. Juliana Brandi',initials:'JB',photo:'profesionales/juliana-brandi.jpg',category:'Psicopedagogía',role:'Psicopedagoga',phone:'2215587073',display:'221 558-7073',email:'mjbrandi74@hotmail.com'},
-  {name:'Pilar Payer',initials:'PP',photo:'profesionales/pilar-payer.png',category:'Musicoterapia',role:'Musicoterapeuta',phone:'2215701831',display:'221 570-1831',email:'lic.pilarpayer@gmail.com'},
-  {name:'Agustina Vericat',initials:'AV',photo:'profesionales/agustina-vericat.jpg',category:'Neurodesarrollo',role:'Dra. en Neurodesarrollo',phone:'2215234150',display:'221 523-4150',email:'agustinavericat@gmail.com'},
-  {name:'Sandra Marder',initials:'SM',photo:'profesionales/sandra-marder.png',category:'Psicología',role:'Dra. en Psicología',specialty:'Neuropsicología. Aprendizaje y desarrollo en niños y adolescentes',phone:'1166447155',display:'11 6644-7155',email:'sandramarder@gmail.com'}
+  {name:'Anahí Gomez',initials:'AG',photo:'profesionales/optimized/anahi-gomez.jpg',category:'Fonoaudiología',role:'Fonoaudióloga',phone:'2223431172',display:'2223 43-1172',email:'anahigom95@gmail.com'},
+  {name:'Mariana Bonfigli',initials:'MB',photo:'profesionales/optimized/mariana-bonfigli.jpg',category:'Psicología',role:'Psicología clínica',specialty:'Atención a adultos, adolescentes y niños.',phone:'2215437390',display:'221 543-7390',email:'marianabonfigli@gmail.com'},
+  {name:'Claudia Peralta',initials:'CP',photo:'profesionales/optimized/claudia-peralta.jpg',category:'Psicopedagogía',role:'Lic. en Psicopedagogía',phone:'2215467348',display:'221 546-7348',email:'clau.peralta@hotmail.com'},
+  {name:'Cecilia Collazo',initials:'CC',photo:'profesionales/optimized/cecilia-collazo.jpg',category:'Psicología',role:'Especialista en Psicología Clínica',phone:'2215471873',display:'221 547-1873',email:'psic_collazo@hotmail.com'},
+  {name:'M. Juliana Brandi',initials:'JB',photo:'profesionales/optimized/juliana-brandi.jpg',category:'Psicopedagogía',role:'Psicopedagoga',phone:'2215587073',display:'221 558-7073',email:'mjbrandi74@hotmail.com'},
+  {name:'Pilar Payer',initials:'PP',photo:'profesionales/optimized/pilar-payer.jpg',category:'Musicoterapia',role:'Musicoterapeuta',phone:'2215701831',display:'221 570-1831',email:'lic.pilarpayer@gmail.com'},
+  {name:'Agustina Vericat',initials:'AV',photo:'profesionales/optimized/agustina-vericat.jpg',category:'Neurodesarrollo',role:'Dra. en Neurodesarrollo',phone:'2215234150',display:'221 523-4150',email:'agustinavericat@gmail.com'},
+  {name:'Sandra Marder',initials:'SM',photo:'profesionales/optimized/sandra-marder.jpg',category:'Psicología',role:'Dra. en Psicología',specialty:'Neuropsicología. Aprendizaje y desarrollo en niños y adolescentes',phone:'1166447155',display:'11 6644-7155',email:'sandramarder@gmail.com'}
 ];
 function renderProfessional(p) {
   const message = encodeURIComponent(`Hola ${p.name}, te contacto desde la página de EPSI. Quisiera hacer una consulta.`);
   const avatar = p.photo
-    ? `<span class="avatar avatar-photo"><img src="${p.photo}" alt="${p.name}" width="56" height="56" loading="lazy" decoding="async"></span>`
+    ? `<span class="avatar avatar-photo"><img src="${p.photo}" alt="${p.name}" width="56" height="56" loading="eager" decoding="async"></span>`
     : `<span class="avatar" aria-hidden="true">${p.initials}</span>`;
   const whatsapp = p.phone ? `<a class="contact whatsapp" href="https://wa.me/549${p.phone}?text=${message}" target="_blank" rel="noopener noreferrer" aria-label="Contactar a ${p.name} por WhatsApp (abre en otra pestaña)"><svg aria-hidden="true"><use href="#wa"/></svg>WhatsApp</a>` : '';
   const mail = p.email ? `<a class="contact email" href="mailto:${p.email}" aria-label="Enviar un correo a ${p.name}"><svg aria-hidden="true"><use href="#mail"/></svg>Mail</a>` : '';
@@ -32,6 +32,10 @@ document.getElementById('team').innerHTML = categories.map((category, index) => 
   return `<details class="professional-group specialty" name="specialties"><summary class="specialty-toggle"><span><span class="specialty-name">${category}</span><span class="specialty-hint">${cards ? 'Ver profesionales' : 'Consultar por esta especialidad'}</span></span><svg class="specialty-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary><div class="category-cards">${content}</div></details>`;
 }).join('');
 
+// Fetch and decode portraits while the specialty panels are still closed.
+document.querySelectorAll('.avatar-photo img').forEach(img => {
+  if (img.decode) img.decode().catch(() => {});
+});
 const chooseButton = document.getElementById('choose-professional');
 const teamSection = document.getElementById('equipo');
 chooseButton.addEventListener('click', () => {
