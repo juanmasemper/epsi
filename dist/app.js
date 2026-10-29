@@ -23,7 +23,7 @@ chooseButton.addEventListener('click', () => {
   const opening = teamSection.hidden;
   teamSection.hidden = !opening;
   chooseButton.setAttribute('aria-expanded', String(opening));
-  document.getElementById('choose-label').textContent = opening ? 'Ocultar rubros' : 'Elegí a tu profesional';
+  document.getElementById('choose-label').textContent = opening ? 'Ocultar especialidades' : 'Elegí a tu profesional';
   if (opening) {
     teamSection.focus({preventScroll:true});
     teamSection.scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth', block:'start'});
