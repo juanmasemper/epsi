@@ -6,7 +6,9 @@ Sitio estático con HTML, CSS y JavaScript. No necesita instalación de dependen
 
 ## Archivos
 
-- `dist/index.html`: diseño y datos de las profesionales, en el arreglo `professionals`.
+- `dist/index.html`: estructura de la página y enlaces generales de EPSI.
+- `dist/design.css`: diseño oscuro con tarjetas en relieve y adaptación a celulares.
+- `dist/app.js`: datos de las profesionales en el arreglo `professionals`, botones para copiar y efectos de iluminación.
 - `dist/logo-epsi.png`: ícono de trabajo en equipo proporcionado por el usuario, creado por Vectors Market (Flaticon), con atribución en el pie de página.
 - `vercel.json`: publicación de la carpeta `dist` en Vercel.
 
@@ -23,4 +25,3 @@ Una vez conectado, los cambios enviados a la rama de producción se publican aut
 ## Atribución del ícono
 
 Trabajo en equipo, de Vectors Market: https://www.flaticon.com/free-icon/teamwork_306207. Licencia de Flaticon con atribución.
-
