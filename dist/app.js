@@ -34,3 +34,31 @@ if (window.matchMedia('(hover: hover) and (pointer: fine) and (prefers-reduced-m
     });
   });
 }
+
+const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
+const finePointer = window.matchMedia('(hover: hover) and (pointer: fine)');
+const scene = document.querySelector('.background-parallax');
+let sceneFrame = 0;
+let sceneX = 0;
+let sceneY = 0;
+function moveBackground(event) {
+  if (motionPreference.matches || !scene) return;
+  if (event.type === 'pointermove' && !finePointer.matches) return;
+  sceneX = (event.clientX / window.innerWidth - .5) * 32;
+  sceneY = (event.clientY / window.innerHeight - .5) * 24;
+  if (sceneFrame) return;
+  sceneFrame = requestAnimationFrame(() => {
+    scene.style.setProperty('--scene-x', `${sceneX}px`);
+    scene.style.setProperty('--scene-y', `${sceneY}px`);
+    sceneFrame = 0;
+  });
+}
+window.addEventListener('pointermove', moveBackground, {passive:true});
+window.addEventListener('pointerdown', moveBackground, {passive:true});
+motionPreference.addEventListener('change', () => {
+  if (!motionPreference.matches || !scene) return;
+  cancelAnimationFrame(sceneFrame);
+  sceneFrame = 0;
+  scene.style.removeProperty('--scene-x');
+  scene.style.removeProperty('--scene-y');
+});
