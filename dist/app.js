@@ -4,7 +4,10 @@ const professionals = [
   {name:'Claudia Catalina Repetto',initials:'CR',category:'Fonoaudiología',role:'Fonoaudióloga',specialty:'Lenguaje, alteraciones respiratorias y deglución atípica.',phone:'2214281418',display:'221 428-1418',email:'catalinarepetto25@gmail.com'},
   {name:'Daiana Ferrero',initials:'DF',category:'Psicopedagogía',role:'Lic. en Psicopedagogía',phone:'2392554546',display:'2392 55-4546',email:'daianaferrero@hotmail.com'},
   {name:'Anahí Gomez',initials:'AG',category:'Fonoaudiología',role:'Fonoaudióloga',phone:'2223431172',display:'2223 43-1172',email:'anahigom95@gmail.com'},
-  {name:'Mariana Bonfigli',initials:'MB',category:'Psicología',role:'Psicología clínica',specialty:'Atención a adultos, adolescentes y niños.',phone:'2215437390',display:'221 543-7390',email:'marianabonfigli@gmail.com'}
+  {name:'Mariana Bonfigli',initials:'MB',category:'Psicología',role:'Psicología clínica',specialty:'Atención a adultos, adolescentes y niños.',phone:'2215437390',display:'221 543-7390',email:'marianabonfigli@gmail.com'},
+  {name:'Claudia Peralta',initials:'CP',category:'Psicopedagogía',role:'Lic. en Psicopedagogía',phone:'2215467348',display:'221 546-7348',email:'clau.peralta@hotmail.com'},
+  {name:'Cecilia Collazo',initials:'CC',category:'Psicología',role:'Especialista en Psicología Clínica',phone:'2215471873',display:'221 547-1873',email:'psic_collazo@hotmail.com'},
+  {name:'M. Juliana Brandi',initials:'JB',category:'Psicopedagogía',role:'Psicopedagoga',phone:'2215587073',display:'221 558-7073',email:'mjbrandi74@hotmail.com'}
 ];
 function renderProfessional(p) {
   const message = encodeURIComponent(`Hola ${p.name}, te contacto desde la página de EPSI. Quisiera hacer una consulta.`);
