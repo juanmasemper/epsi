@@ -12,7 +12,7 @@ function renderProfessional(p) {
 const categories = ['Psicopedagogía', 'Fonoaudiología'];
 document.getElementById('team').innerHTML = categories.map((category, index) => {
   const cards = professionals.filter(p => p.category === category).map(renderProfessional).join('');
-  return `<section class="professional-group" aria-labelledby="category-${index}"><h2 id="category-${index}" class="category-heading">${category}</h2><div class="category-cards">${cards}</div></section>`;
+  return `<details class="professional-group specialty" name="specialties"><summary class="specialty-toggle"><span><span class="specialty-name">${category}</span><span class="specialty-hint">Ver profesionales</span></span><svg class="specialty-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary><div class="category-cards">${cards}</div></details>`;
 }).join('');
 
 const chooseButton = document.getElementById('choose-professional');
@@ -21,7 +21,7 @@ chooseButton.addEventListener('click', () => {
   const opening = teamSection.hidden;
   teamSection.hidden = !opening;
   chooseButton.setAttribute('aria-expanded', String(opening));
-  document.getElementById('choose-label').textContent = opening ? 'Ocultar profesionales' : 'Elegí a tu profesional';
+  document.getElementById('choose-label').textContent = opening ? 'Ocultar rubros' : 'Elegí a tu profesional';
   if (opening) {
     teamSection.focus({preventScroll:true});
     teamSection.scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth', block:'start'});
