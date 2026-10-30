@@ -22,3 +22,5 @@ html{min-height:100%;background:var(--bg)}body{min-height:100vh;min-height:100sv
 .avatar-photo img[src='profesionales/optimized/claudia-peralta.jpg']{object-position:50% 30%;transform:scale(2.2);transform-origin:64% 50%}
 
 .avatar-photo img[src='profesionales/optimized/mariana-bonfigli.jpg']{width:56px;height:56px;object-fit:cover;object-position:50% 40%}
+
+.avatar-photo img[src='profesionales/optimized/lucia-blanch.jpg']{width:56px;height:56px;object-fit:cover;object-position:center}

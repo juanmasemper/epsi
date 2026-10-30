@@ -1,4 +1,5 @@
 const professionals = [
+  {name:'Lucía Blanch',initials:'LB',photo:'profesionales/optimized/lucia-blanch.jpg',category:'Psicología',role:'Lic. en Psicología',specialty:'Niños, adolescentes y adultos.',phone:'1131428145',display:'11 3142-8145',email:'Lucia_blanch@hotmail.com'},
   {name:'Sofía Mauro',initials:'SM',photo:'profesionales/optimized/sofia.jpg',category:'Psicopedagogía',role:'Lic. en Psicopedagogía',phone:'3775444982',display:'3775 44-4982',email:'sofiamauro18@gmail.com'},
   {name:'Karina Luján Burgos',initials:'KB',photo:'profesionales/optimized/karina-lujan-burgos.jpg',category:'Psicopedagogía',role:'Lic. en Psicopedagogía',specialty:'Maestranda en Neuropsicología Infantojuvenil',phone:'2215485965',display:'221 548-5965',email:'lic.karinaburgos@gmail.com'},
   {name:'Camila Lamiño',initials:'CL',category:'Psicopedagogía',role:'Psicopedagoga',phone:'2214955975',display:'221 495-5975',email:'Camilalaminio.psp@gmail.com'},
