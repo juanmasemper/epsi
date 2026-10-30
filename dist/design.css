@@ -15,7 +15,7 @@ html{min-height:100%;background:var(--bg)}body{min-height:100vh;min-height:100sv
 #equipo:focus{outline:none}
 .avatar-photo{width:56px;height:56px;border-radius:16px;overflow:hidden;padding:0}.avatar-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 30%}.person .avatar-photo{flex-shrink:0}
 
-.avatar-photo img[src='profesionales/optimized/anahi-gomez.webp']{object-position:50% 30%;transform:scale(1.5);transform-origin:50% 50%}
+.avatar-photo img[src='profesionales/optimized/anahi-gomez.webp']{object-position:50% 26%;transform:scale(1.7);transform-origin:50% 50%}
 
 .avatar-photo img[src='profesionales/optimized/sofia.webp']{width:56px;height:56px;object-fit:cover;object-position:50% 65%}
 
@@ -26,3 +26,35 @@ html{min-height:100%;background:var(--bg)}body{min-height:100vh;min-height:100sv
 .avatar-photo img[src='profesionales/optimized/lucia-blanch.webp']{width:56px;height:56px;object-fit:cover;object-position:center}
 
 .avatar-photo img[src='profesionales/optimized/daiana-ferrero.webp']{object-position:50% 8%;transform:scale(1.2);transform-origin:0% 50%}
+
+.theme-toolbar{display:flex;justify-content:flex-end;flex-shrink:0;margin-bottom:20px}
+.theme-toggle{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:10px 14px;border:1px solid #b8946c50;border-radius:24px;background:linear-gradient(145deg,#30271f,#1d1813);color:var(--text);font-size:12px;box-shadow:0 3px 8px #0003}
+.theme-toggle:hover{border-color:var(--gold)}
+.theme-toggle svg{width:17px;height:17px;color:var(--gold)}
+.theme-moon{display:none}
+:root[data-theme='light']{color-scheme:light;--bg:#f7f2e9;--text:#34271f;--muted:#6c5949;--gold:#875013;--line:#795a3426;--green:#176c43}
+[data-theme='light'] body{background-image:radial-gradient(ellipse at 50% 0,#ebd3ab70,transparent 580px),radial-gradient(ellipse at 5% 45%,#d5e0c238,transparent 600px)}
+[data-theme='light'] .theme-sun{display:none}
+[data-theme='light'] .theme-moon{display:block}
+[data-theme='light'] .theme-toggle,[data-theme='light'] .social-icon{background:linear-gradient(145deg,#fffdf8,#ede3d4);border-color:#a17b4f55;box-shadow:0 3px 8px #795a3418}
+[data-theme='light'] .wordmark{text-shadow:0 2px 0 #fff,0 4px 12px #b88d4420}
+[data-theme='light'] .logo{box-shadow:0 0 0 7px #bf8a3212,0 6px 0 -3px #b48b5540,0 14px 28px #795a3420,inset 0 1px 2px #fff9}
+[data-theme='light'] .primary-cta{box-shadow:inset 0 2px 0 #fff0d6,0 5px 0 #ba803a,0 12px 26px #795a3426}
+[data-theme='light'] .primary-cta:active{box-shadow:inset 0 1px 0 #fff0d6,0 2px 0 #ba803a,0 6px 14px #795a3426}
+[data-theme='light'] .specialty-toggle{background:linear-gradient(140deg,#fffdf8,#eee4d5);border-color:#b6926355;box-shadow:0 4px 0 #c3a47c55,0 10px 20px #795a3412}
+[data-theme='light'] .specialty-toggle:hover,[data-theme='light'] .specialty[open] .specialty-toggle{border-color:#986d39}
+[data-theme='light'] .specialty-name,[data-theme='light'] .category-heading{color:#67411d}
+[data-theme='light'] .card{background:radial-gradient(ellipse at 0 0,#f3dfbd60,transparent 65%),linear-gradient(135deg,#fffefa,#f5ecdf);border-color:#b6926355;box-shadow:0 5px 0 -2px #c3a47c66,0 12px 24px #795a3415,inset 1px 1px 0 #fff}
+[data-theme='light'] .card:before{background:radial-gradient(circle at var(--light-x,20%) var(--light-y,0%),#e3bb7830,transparent 65%)}
+[data-theme='light'] .avatar,[data-theme='light'] .card:nth-child(n) .avatar,[data-theme='light'] .professional-group:last-child .avatar{background:linear-gradient(145deg,#eee0ca,#dbc5a4);color:#67411d;border-color:#a17b4f55;box-shadow:2px 3px 6px #795a3422}
+[data-theme='light'] .email{background:linear-gradient(145deg,#f7efdf,#e7d9c4);border-color:#b6926355;color:#49331f;box-shadow:inset 0 1px 0 #fff,0 3px 0 #baa17f,0 6px 12px #795a3418}
+[data-theme='light'] .whatsapp{box-shadow:inset 0 1px 0 #c2ffe16b,0 3px 0 #247748,0 6px 12px #795a3418}
+[data-theme='light'] .details{border-top-color:#a17b4f55}
+[data-theme='light'] .copy:hover{color:#59330e}
+[data-theme='light'] footer,[data-theme='light'] footer a{color:#6c5949}
+[data-theme='light'] .theme-symbol{color:#986d39;filter:drop-shadow(0 4px 2px #795a3418);opacity:.16}
+[data-theme='light'] .theme-book{color:#536640}
+[data-theme='light'] .theme-learning{color:#986d39}
+[data-theme='light'] .glow-one{background:radial-gradient(circle,#d7a15525,transparent 68%)}
+[data-theme='light'] .glow-two{background:radial-gradient(circle,#8fa56c20,transparent 65%)}
+@media(max-width:750px){[data-theme='light'] .theme-symbol{opacity:.1}}
