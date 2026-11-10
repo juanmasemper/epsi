@@ -58,3 +58,5 @@ html{min-height:100%;background:var(--bg)}body{min-height:100vh;min-height:100sv
 [data-theme='light'] .glow-one{background:radial-gradient(circle,#d7a15525,transparent 68%)}
 [data-theme='light'] .glow-two{background:radial-gradient(circle,#8fa56c20,transparent 65%)}
 @media(max-width:750px){[data-theme='light'] .theme-symbol{opacity:.1}}
+
+.license{margin:5px 0 0;color:var(--muted);font-size:11px;line-height:1.5;overflow-wrap:anywhere}
